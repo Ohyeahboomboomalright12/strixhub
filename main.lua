@@ -39,39 +39,3 @@ local Tab = Window:Tab({
     Title = "Universal",
     Icon = "globe", -- lucide or rbxassetid
 })
-local Paragraph = Tab:Paragraph({
-    Title = "Paragraph",
-    Desc = "Paragraph Content 
-Second Line!",
-    Image = "droplet", -- lucide or URL or rbxassetid://
-    ImageSize = 20,
-    Buttons = {
-        {
-            Title = "Button 1",
-            Callback = function() print("hi") end
-        },
-        {
-            Title = "Button 2",
-            Callback = function() print("hi 2") end
-        },
-        {
-            Title = "Button 3",
-            Callback = function() print("hi 3") end
-        }
-    }
-})
-local Button = MainTab:Button({
-    Title = "Button Main",
-    Desc = "Button Desc",
-    Callback = function()
-        Window:Dialog({
-            Title = "Dialog haha",
-            Content = "Dialog Content",
-            Buttons = {
-                { Title = "Confirm", Callback = function() print("confirm") end },
-                { Title = "Cancel", Callback = function() print("cancel") end },
-                { Title = "Idk", Callback = function() print("idk") end }
-            }
-        }):Open()
-    end
-})
