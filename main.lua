@@ -36,6 +36,6 @@ local Dialog = Window:Dialog({
 Dialog:Open()
 
 local Tab = Window:Tab({
-    Title = "Main",
-    Icon = "folder", -- lucide or rbxassetid
+    Title = "Universal",
+    Icon = "globe", -- lucide or rbxassetid
 })
