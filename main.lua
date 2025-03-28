@@ -60,3 +60,18 @@ Second Line!",
         }
     }
 })
+local Button = MainTab:Button({
+    Title = "Button Main",
+    Desc = "Button Desc",
+    Callback = function()
+        Window:Dialog({
+            Title = "Dialog haha",
+            Content = "Dialog Content",
+            Buttons = {
+                { Title = "Confirm", Callback = function() print("confirm") end },
+                { Title = "Cancel", Callback = function() print("cancel") end },
+                { Title = "Idk", Callback = function() print("idk") end }
+            }
+        }):Open()
+    end
+})
