@@ -16,7 +16,7 @@ local Window = WindUI:CreateWindow({
     SideBarWidth = 170, -- UI Sidebar Width (number)
     HasOutline = true, -- Adds Outlines to the window
 })
-WindUI:SetTheme("Halloween")
+
 local Tab = Window:Tab({
     Title = "Universal",
     Icon = "globe", -- lucide or rbxassetid
@@ -97,7 +97,24 @@ local Paragraph = Tab:Paragraph({
     }
 })
 
+
+
+
 local Tab = Window:Tab({
     Title = "FE",
     Icon = "globe", -- lucide or rbxassetid
+})
+
+local Paragraph = Tab:Paragraph({
+    Title = "Slicer FE v7",
+    Desc = "every fe scripts with some hat scripts",
+    Image = "droplet", -- lucide or URL or rbxassetid://
+    ImageSize = 20,
+    Buttons = {
+        {
+            Title = "Execute",
+            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Ahma174/Slicer/refs/heads/main/Slicer%20Fe%20V7.txt"))() print("Executed!") end
+        },
+     
+    }
 })
