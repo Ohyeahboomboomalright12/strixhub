@@ -96,3 +96,8 @@ local Paragraph = Tab:Paragraph({
      
     }
 })
+
+local Tab = Window:Tab({
+    Title = "FE",
+    Icon = "globe", -- lucide or rbxassetid
+})
