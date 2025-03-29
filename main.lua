@@ -118,3 +118,18 @@ local Paragraph = Tab:Paragraph({
      
     }
 })
+
+local Paragraph = Tab:Paragraph({
+    Title = "FE R15 Animations",
+    Desc = "FE R15 animations for free",
+    Image = "droplet", -- lucide or URL or rbxassetid://
+    ImageSize = 20,
+    Buttons = {
+        {
+            Title = "Execute",
+            Callback = function() loadstring(game:HttpGet("https://psub-scirbe1.neocities.org/roblox_scripts/fe_r15_dances.txt"))() print("Executed!") end
+        },
+     
+    }
+})
+
