@@ -133,3 +133,21 @@ local Paragraph = Tab:Paragraph({
     }
 })
 
+local Tab = Window:Tab({
+    Title = "Underrated Scripts",
+    Icon = "thumbs-up", -- lucide or rbxassetid
+})
+
+local Paragraph = Tab:Paragraph({
+    Title = "Underrated CMD",
+    Desc = "Has a good UI and the best fling method",
+    Image = "droplet", -- lucide or URL or rbxassetid://
+    ImageSize = 20,
+    Buttons = {
+        {
+            Title = "Execute",
+            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/lxte/cmd/main/testing-main.lua"))() print("Executed!") end
+        },
+     
+    }
+})
