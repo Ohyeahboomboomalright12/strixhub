@@ -16,21 +16,3 @@ local Window = WindUI:CreateWindow({
     SideBarWidth = 170, -- UI Sidebar Width (number)
     HasOutline = true, -- Adds Outlines to the window
 })
-Window:EditOpenButton({
-    Title = "Open Example UI", -- Title
-    Icon = "monitor", -- Icon
-    CornerRadius = UDim.new(0,10), -- Radius
-    StrokeThickness = 2, -- Stroke Thickness
-    Color = ColorSequence.new( -- Gradient
-        Color3.fromHex("FF0F7B"), 
-        Color3.fromHex("F89B29")
-    ),
-    Position = UDim2.new(0.5,0,0.5,0), -- Position
-    Enabled = true,   -- true or false
-    Draggable = true, -- true or false
-})
-local Notification = WindUI:Notify({
-    Title = "Notification",
-    Content = "Content",
-    Duration = 5,
-})
