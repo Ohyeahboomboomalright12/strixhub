@@ -8,7 +8,7 @@ local Window = WindUI:CreateWindow({
     KeySystem = { -- Creates key system
         Key = "sigmaballs", -- key
         Note = "join the discord god dammit ", -- Note
-        URL = "https://github.com/Footagesus/WindUI", -- URL To get key (example: Discord)
+        URL = "https://discord.gg/vsauztQYNX", -- URL To get key (example: Discord)
         SaveKey = false, -- Saves the key in the folder specified above
     }, 
     Transparent = true,-- UI Transparency
