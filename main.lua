@@ -17,7 +17,6 @@ local Window = WindUI:CreateWindow({
     HasOutline = true, -- Adds Outlines to the window
 })
 WindUI:SetTheme("Halloween")
-
 local Tab = Window:Tab({
     Title = "Universal",
     Icon = "globe", -- lucide or rbxassetid
@@ -65,6 +64,34 @@ local Paragraph = Tab:Paragraph({
         {
             Title = "Execute",
             Callback = function() loadstring(game:HttpGet('https://sirius.menu/script'))() print("Executed!") end
+        },
+     
+    }
+})
+
+local Paragraph = Tab:Paragraph({
+    Title = "SimpleSpy",
+    Desc = "A remote spy",
+    Image = "globe", -- lucide or URL or rbxassetid://
+    ImageSize = 20,
+    Buttons = {
+        {
+            Title = "Execute",
+            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/nuIIism/scripts/main/rspy.lua"))() print("Executed!") end
+        },
+     
+    }
+})
+
+local Paragraph = Tab:Paragraph({
+    Title = "Orca",
+    Desc = "sirius copy",
+    Image = "globe", -- lucide or URL or rbxassetid://
+    ImageSize = 20,
+    Buttons = {
+        {
+            Title = "Execute",
+            Callback = function() loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/snapshot.lua"))() print("Executed!") end
         },
      
     }
